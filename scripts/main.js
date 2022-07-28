@@ -2,7 +2,6 @@ const today = new Date()
   .toLocaleDateString('en-us', { weekday: 'short' })
   .toLocaleLowerCase()
 function calculate (charts) {
-  console.log(charts)
   const max = Math.max(...charts.map(chart => chart.amount))
   const sizes = charts.map(chart => {
     return {
